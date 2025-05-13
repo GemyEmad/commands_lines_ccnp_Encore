@@ -1,7 +1,7 @@
-# In the CCNP Encor course, you'll encounter a variety of commands for both switching and routing, primarily using Cisco IOS. Below is a breakdown of some key command-line instructions you should be familiar with for configuring and managing switching and routing. Note that this is not an exhaustive list but focuses on commonly used commands covered in the course.
+## In the CCNP Encor course, you'll encounter a variety of commands for both switching and routing, primarily using Cisco IOS. Below is a breakdown of some key command-line instructions you should be familiar with for configuring and managing switching and routing. Note that this is not an exhaustive list but focuses on commonly used commands covered in the course.
 
-Switching Commands
-Switching commands are essential for configuring and managing Layer 2 networks, including VLANs, trunking, and Spanning Tree Protocol (STP).
+## Switching Commands
+## Switching commands are essential for configuring and managing Layer 2 networks, including VLANs, trunking, and Spanning Tree Protocol (STP).
 
 ## VLAN Configuration
   ```bash
@@ -14,7 +14,7 @@ name <vlan_name>
 ```
 ## Assigns a name to the VLAN (e.g., name SALES).
 ## interface vlan <number>
-# Enters interface configuration mode for a VLAN, typically for creating a Switched Virtual Interface (SVI) (e.g., interface vlan 10).
+## Enters interface configuration mode for a VLAN, typically for creating a Switched Virtual Interface (SVI) (e.g., interface vlan 10).
 ## Port Configuration
 ```bash
 switchport mode access
@@ -31,7 +31,7 @@ switchport mode trunk
 ```bash
 switchport trunk allowed vlan <list>
 ```
-# Specifies which VLANs are allowed on the trunk (e.g., switchport trunk allowed vlan 10,20).
+## Specifies which VLANs are allowed on the trunk (e.g., switchport trunk allowed vlan 10,20).
 ## Spanning Tree Protocol (STP)
 ```bash
 spanning-tree mode <mode>
@@ -45,8 +45,8 @@ spanning-tree vlan <vlan_id> root primary
 spanning-tree vlan <vlan_id> priority <priority>
 ```
 Manually sets the bridge priority for a VLAN (e.g., spanning-tree vlan 10 priority 4096).
-# Routing Commands
-# Routing commands are crucial for configuring and managing Layer 3 routing protocols like OSPF, EIGRP, and BGP, as well as static routing.
+## Routing Commands
+## Routing commands are crucial for configuring and managing Layer 3 routing protocols like OSPF, EIGRP, and BGP, as well as static routing.
 
 ## General Routing Commands
 ```bash
@@ -112,7 +112,7 @@ network <network> mask <mask>
 aggregate-address <network> <mask>
 ```
 ## Configures route aggregation in BGP (e.g., aggregate-address 10.0.0.0 255.255.0.0).
-# Important Notes
-# Not Exhaustive: This list highlights key commands commonly emphasized in the CCNP Encor course. The full scope of commands may vary depending on specific topics or lab scenarios.
-# Practice Required: To master these commands, practice them in a lab environment like Cisco Packet Tracer or real hardware.
-# Context Matters: Many commands require additional parameters or context (e.g., entering the correct configuration mode with configure terminal).
+## Important Notes
+## Not Exhaustive: This list highlights key commands commonly emphasized in the CCNP Encor course. The full scope of commands may vary depending on specific topics or lab scenarios.
+## Practice Required: To master these commands, practice them in a lab environment like Cisco Packet Tracer or real hardware.
+## Context Matters: Many commands require additional parameters or context (e.g., entering the correct configuration mode with configure terminal).
